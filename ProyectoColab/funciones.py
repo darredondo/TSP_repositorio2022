@@ -42,7 +42,12 @@ class funciones:
     #Funcion que recibe un valor y si no esta dentro del rango lo ajusta a los limites
     #Asignado a: RODRIGUEZ GAYTAN JAIME ABRAHAM
     def funcionAjustar(self, valor, inferior, superior):
-        pass
+        if (valor >= inferior and valor <= superior):
+            print("El valor dado esta dentro del rango")
+        else:
+            print("El valor dado no esta dentro del rango")
+            valor = inferior
+        return valor
 
     #Funcion que recibe una lista de numeros y regresa en una lista los negativos, neutros y positivos
     #Asignado a: ROJAS LÓPEZ ALEJANDRO JOSUE
