@@ -1,8 +1,14 @@
 class funciones:
     #Funcion que recibe una lista de numeros y regresa la cantidad de pares
-    #Asignado a: BARRON HERRADA VICTOR
+    #Asignado a: FRIDA SOFIA ORTIZ SILVA
     def funcionContarPares(self, lista):
-        pass
+
+        num_pares = []
+        cont = 0
+        for n in lista:
+            if n % 2 == 0:
+                cont = cont + 1
+        return cont
 
     #Funcion que recibe una lista de numeros y regresa la cantidad de negativos
     #Asignado a: GALVAN DE LA RIVA MIGUEL ANGEL
