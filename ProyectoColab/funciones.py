@@ -1,8 +1,14 @@
 class funciones:
     #Funcion que recibe una lista de numeros y regresa la cantidad de pares
-    #Asignado a: BARRON HERRADA VICTOR
+    #Asignado a: FRIDA SOFIA ORTIZ SILVA
     def funcionContarPares(self, lista):
-        pass
+
+        num_pares = []
+        cont = 0
+        for n in lista:
+            if n % 2 == 0:
+                cont = cont + 1
+        return cont
 
     #Funcion que recibe una lista de numeros y regresa la cantidad de negativos
     #Asignado a: GALVAN DE LA RIVA MIGUEL ANGEL
@@ -30,7 +36,12 @@ class funciones:
     #Funcion que recibe una nombre completo y regresa las iniciales
     #Asignado a: HERNANDEZ SEGURA LUIS ENRIQUE
     def funcionIniciales(self, nombre):
-        pass
+        prueba = nombre.split(" ")
+        # prueba= np.array(nombre.split(" "))
+        inicialesNombre = ""
+        for x in prueba:
+            inicialesNombre = inicialesNombre + x[0]
+        return inicialesNombre
 
     #Funcion que recibe una lista de numeros y regresa verdadero si esta ordenada o falso si no
     #Asignado a: HERNANDEZ TINOCO LUZ ELIZABETH
