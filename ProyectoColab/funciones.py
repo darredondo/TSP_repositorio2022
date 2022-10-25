@@ -40,7 +40,11 @@ class funciones:
     #Funcion que recibe una lista de numeros y regresa verdadero si hay duplicados o falso si no
     #Asignado a: MARTINEZ PUENTE DANIEL ALEJANDRO
     def funcionHayDuplicados(self, lista):
-        pass
+        dup = [x for i, x in enumerate(lista) if i != lista.index(x)]
+        if dup.__len__() > 0:
+            return True
+        else:
+            return False
 
     #Funcion que recibe una lista de elemento y regresa en una lista el tipo de dato, usar la funcion type()
     #Asignado a: RODRIGUEZ CERDA JOSE ALFREDO
