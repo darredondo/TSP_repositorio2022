@@ -17,8 +17,11 @@ class funciones:
     #Funcion que recibe una palabra y regresa la cantidad de vocales
     #Asignado a: HERNANDEZ RAMIREZ DIEGO FRANCISCO
     def funcionVocales(self, palabra):
-        pass
-
+        voc = 0
+        for c in palabra:
+            if c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u' or c == 'A' or c == 'E' or c == 'I' or c == 'O' or c == 'U':
+                voc = voc + 1
+        return voc
     #Funcion que recibe una nombre completo y regresa las iniciales
     #Asignado a: HERNANDEZ SEGURA LUIS ENRIQUE
     def funcionIniciales(self, nombre):
