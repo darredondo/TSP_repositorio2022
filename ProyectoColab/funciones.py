@@ -45,7 +45,7 @@ class funciones:
         if (valor >= inferior and valor <= superior):
             print("El valor dado esta dentro del rango")
         else:
-            print("El valor dado no esta dentro del rango")
+            print("El valor dado no esta dentro del rango y se ha ajustado al limite")
             valor = inferior
         return valor
 
