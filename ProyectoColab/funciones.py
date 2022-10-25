@@ -7,9 +7,11 @@ class funciones:
     #Funcion que recibe una lista de numeros y regresa la cantidad de negativos
     #Asignado a: GALVAN DE LA RIVA MIGUEL ANGEL
     def funcionContarNegativos(self, lista):
-        pass
 
-    #Funcion que recibe una palabra y regresa la palabra inversa en mayusculas
+        count = len(list(filter(lambda x: (x < 0), lista)))
+        return count
+
+        #Funcion que recibe una palabra y regresa la palabra inversa en mayusculas
     #Asignado a: HERNANDEZ MARTINEZ DAVID
     def funcionInversaMayus(self, palabra):
         pass
