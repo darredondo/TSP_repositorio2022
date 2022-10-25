@@ -12,7 +12,10 @@ class funciones:
     #Funcion que recibe una palabra y regresa la palabra inversa en mayusculas
     #Asignado a: HERNANDEZ MARTINEZ DAVID
     def funcionInversaMayus(self, palabra):
-        pass
+        resultado= ''
+        for c in range(len(palabra) -1, -1, -1):
+            resultado += palabra[c]
+        return resultado.upper()
 
     #Funcion que recibe una palabra y regresa la cantidad de vocales
     #Asignado a: HERNANDEZ RAMIREZ DIEGO FRANCISCO
