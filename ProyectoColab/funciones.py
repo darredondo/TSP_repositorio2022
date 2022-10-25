@@ -30,7 +30,12 @@ class funciones:
     #Funcion que recibe una nombre completo y regresa las iniciales
     #Asignado a: HERNANDEZ SEGURA LUIS ENRIQUE
     def funcionIniciales(self, nombre):
-        pass
+        prueba = nombre.split(" ")
+        # prueba= np.array(nombre.split(" "))
+        inicialesNombre = ""
+        for x in prueba:
+            inicialesNombre = inicialesNombre + x[0]
+        return inicialesNombre
 
     #Funcion que recibe una lista de numeros y regresa verdadero si esta ordenada o falso si no
     #Asignado a: HERNANDEZ TINOCO LUZ ELIZABETH
