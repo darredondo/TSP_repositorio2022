@@ -60,7 +60,7 @@ class funciones:
     #Funcion que recibe una lista de elemento y regresa en una lista el tipo de dato, usar la funcion type()
     #Asignado a: RODRIGUEZ CERDA JOSE ALFREDO
     def funcionListaTipos(self, lista):
-        pass
+
 
     #Funcion que recibe un valor y si no esta dentro del rango lo ajusta a los limites
     #Asignado a: RODRIGUEZ GAYTAN JAIME ABRAHAM
@@ -75,8 +75,20 @@ class funciones:
     #Funcion que recibe una lista de numeros y regresa en una lista los negativos, neutros y positivos
     #Asignado a: ROJAS LÓPEZ ALEJANDRO JOSUE
     def funcionListaClasificados(self, lista):
-        pass
+        pos = 0
+        neu = 0
+        neg = 0
+        for num in lista:
+            if num < 0:
+                neg += 1
 
+            elif num == 0:
+                neu +=1
+
+            else:
+                pos +=1
+        array = [neg, neu, pos]
+        return array
     #Funcion que recibe una lista de numeros y regresa en una lista de cada numero multiplicado por un Multiplicando
     #Asignado a: SALAZAR SUAREZ ISRAEL
     def funcionListaMultiplos(self, lista, multiplicando):
