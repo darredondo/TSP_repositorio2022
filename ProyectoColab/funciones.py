@@ -60,8 +60,20 @@ class funciones:
     #Funcion que recibe una lista de elemento y regresa en una lista el tipo de dato, usar la funcion type()
     #Asignado a: RODRIGUEZ CERDA JOSE ALFREDO
     def funcionListaTipos(self, lista):
-
-
+        try:
+            for l in lista:
+                a = lista[0]
+                b = lista[1]
+                c = lista[2]
+                d = lista[3]
+            array = [type(a), type(b), type(c), type(d)]
+            return array
+        except:
+            for l in lista:
+                a = lista[0]
+                b = lista[1]
+            array = [type(a), type(b)]
+            return array
     #Funcion que recibe un valor y si no esta dentro del rango lo ajusta a los limites
     #Asignado a: RODRIGUEZ GAYTAN JAIME ABRAHAM
     def funcionAjustar(self, valor, inferior, superior):
