@@ -108,6 +108,23 @@ class funciones:
 
     #Funcion que recibe dos listas de numeros y regresa en una lista combinada de manera intercalada
     #Asignado a: VILLALPANDO ALDERETE CELESTE GRISEL
-    def funcionCombinarListas(self, lista):
-        pass
+    def funcionCombinarListas(self, lista1, lista2):
+        ListaFinal = []
+        Tam1 = len(lista1)
+        Tam2 = len(lista2)
+
+        if Tam1 >= Tam2:
+            TamMax = Tam1
+        else:
+            TamMax = Tam2
+
+        for i in range(0, TamMax):
+            if i < Tam1:
+                ListaFinal.append(lista1[i])
+            if i < Tam2:
+                ListaFinal.append(lista2[i])
+        return ListaFinal
+        print(ListaFinal)
+
+
 
